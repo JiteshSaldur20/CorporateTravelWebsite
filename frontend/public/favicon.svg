@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#17231f"/>
+  
+  <!-- Horizon line -->
+  <rect x="60" y="340" width="392" height="12" rx="6" fill="#e0ddd5"/>
+  
+  <!-- Sun body (half circle above horizon) -->
+  <clipPath id="sunClip">
+    <rect x="60" y="120" width="392" height="220"/>
+  </clipPath>
+  <circle cx="256" cy="340" r="170" fill="#f2a83e" clip-path="url(#sunClip)"/>
+  
+  <!-- Sun rays -->
+  <g stroke="#f2a83e" stroke-width="16" stroke-linecap="round" fill="none">
+    <!-- Top center ray -->
+    <line x1="256" y1="80" x2="256" y2="140"/>
+    <!-- Left rays -->
+    <line x1="140" y1="110" x2="170" y2="165"/>
+    <line x1="80" y1="200" x2="125" y2="230"/>
+    <!-- Right rays -->
+    <line x1="372" y1="110" x2="342" y2="165"/>
+    <line x1="432" y1="200" x2="387" y2="230"/>
+  </g>
+</svg>
