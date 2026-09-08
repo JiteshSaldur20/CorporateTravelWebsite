@@ -8,5 +8,5 @@ springdoc:
 # Gmail SMTP (dev credentials)
 spring:
   mail:
-    username: Dummyonemore2@gmail.com
-    password: vtolfdzhzbhqmcoi
+    username: example@gmail.com
+    password: paasword

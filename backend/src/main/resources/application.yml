@@ -36,7 +36,7 @@ spring:
 
 # JWT Configuration
 jwt:
-  secret: ${JWT_SECRET:project-sunrise-secret-key-that-is-at-least-32-bytes-long-for-hs256-algorithm}
+  secret: ${JWT_SECRET}
   access-token-expiration: 3600000  # 1 hour
   refresh-token-expiration: 604800000  # 7 days
 
@@ -48,8 +48,8 @@ password-reset:
 spring.security.oauth2.client:
   registration:
     google:
-      client-id: ${GOOGLE_CLIENT_ID:120432098406-cut7k56sn906mcpakjlbkkvsf6sqj7c5.apps.googleusercontent.com}
-      client-secret: ${GOOGLE_CLIENT_SECRET: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}
+      client-id: ${GOOGLE_CLIENT_ID}
+      client-secret: ${GOOGLE_CLIENT_SECRET}
       authorization-grant-type: authorization_code
       redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
       scope:
