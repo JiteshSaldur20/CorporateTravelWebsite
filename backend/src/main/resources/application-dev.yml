@@ -9,4 +9,4 @@ springdoc:
 spring:
   mail:
     username: example@gmail.com
-    password: paasword
+    password: paasword123
